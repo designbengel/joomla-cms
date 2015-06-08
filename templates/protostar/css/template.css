@@ -990,6 +990,7 @@ input[type="file"] {
 }
 select {
 	width: 220px;
+	max-width:100%;
 	border: 1px solid #ccc;
 	background-color: #fff;
 }
@@ -1645,6 +1646,7 @@ legend + .control-group {
 .form-horizontal .control-label {
 	float: left;
 	width: 160px;
+	max-width:100%;
 	padding-top: 5px;
 	text-align: right;
 }
