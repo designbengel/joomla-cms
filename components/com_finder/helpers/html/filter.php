@@ -488,25 +488,25 @@ abstract class JHtmlFilter
 			$html .= '<li class="filter-date' . $classSuffix . '">';
 			$html .= '<label for="filter_date1" class="hasTooltip" title ="' . JText::_('COM_FINDER_FILTER_DATE1_DESC') . '">';
 			$html .= JText::_('COM_FINDER_FILTER_DATE1');
-			$html .= '</label>';
 			$html .= '<br />';
 			$html .= JHtml::_(
 				'select.genericlist', $operators, 'w1', 'class="inputbox filter-date-operator"', 'value', 'text', $idxQuery->when1, 'finder-filter-w1'
 			);
 			$html .= JHtml::calendar($idxQuery->date1, 'd1', 'filter_date1', '%Y-%m-%d', $attribs);
-			$html .= '</li>';
+            $html .= '</label>';
+            $html .= '</li>';
 
 			// End date filter.
 			$html .= '<li class="filter-date' . $classSuffix . '">';
 			$html .= '<label for="filter_date2" class="hasTooltip" title ="' . JText::_('COM_FINDER_FILTER_DATE2_DESC') . '">';
 			$html .= JText::_('COM_FINDER_FILTER_DATE2');
-			$html .= '</label>';
 			$html .= '<br />';
 			$html .= JHtml::_(
 				'select.genericlist', $operators, 'w2', 'class="inputbox filter-date-operator"', 'value', 'text', $idxQuery->when2, 'finder-filter-w2'
 			);
 			$html .= JHtml::calendar($idxQuery->date2, 'd2', 'filter_date2', '%Y-%m-%d', $attribs);
-			$html .= '</li>';
+            $html .= '</label>';
+            $html .= '</li>';
 
 			// Close the widget.
 			$html .= '</ul>';
